@@ -1,0 +1,44 @@
+源数据有如下字段：
+vehicleplatenumber,device_num,direction_angle,lng,lat,acc_state,right_turn_signals,left_turn_signals,hand_brake,foot_brake,location_time,gps_speed,mileage
+
+
+对个字段进行处理：
+
+vehicleplatenumber（车牌号）：
+    直接删除，因为源数据文件名字就是车牌号，并且该字段对接下来的分析没有意义。
+
+device_num（设备号）：
+    直接删除，因为对接下来的分析没有意义。
+
+direction_angle（方向角）：
+    如果为空值或者负值，那么用相邻时间点的数据的方向角填充。
+
+lng（经度）：
+    如果为空值或者不合理值，那么用相邻时间点的数据的经度填充。
+
+lat（维度）：
+    如果为空值或者不合理值，那么用相邻时间点的数据的维度填充。
+
+acc_state（acc状态）：
+    如果为空值或者不合理值，那么用相邻时间点的acc状态填充。
+
+right_turn_signals（右转向灯）：
+    如果为空值或者不合理值，那么用相邻时间点的right_turn_signals填充。
+
+left_turn_signals（左转向灯）：
+    如果为空值或者不合理值，那么用相邻时间点的left_turn_signals填充。
+
+hand_brake（手刹）：
+    如果为空值或者不合理值，那么用相邻时间点的hand_brake填充。
+
+foot_brake（脚刹）：
+    如果为空值或者不合理值，那么用相邻时间点的foot_brake填充。
+
+location_time（采集时间）：
+    如果是空值或者不合理值，直接删除。
+
+gps_speed（gps速度）：
+    如果是空值或不合理值，用相邻时间点的gps_speed填充。
+
+mileage（gps里程数）：
+    如果是空值或不合理值，用相邻时间点的gps_speed填充。
