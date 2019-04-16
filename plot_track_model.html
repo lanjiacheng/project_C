@@ -1,0 +1,58 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <style type="text/css">
+    body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+
+    </style>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=mCcY3UHrTMd9qIGhLPRq5KfTBITzeSht"></script>
+    <title>行车路线图</title>
+</head>
+<body>
+<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+
+// 百度地图API功能
+var map = new BMap.Map("allmap");    // 创建Map实例
+map.centerAndZoom(new BMap.Point(116.404, 39.915), 14);  // 初始化地图,设置中心点坐标和地图级别
+map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+var sy = new BMap.Symbol(BMap_Symbol_SHAPE_BACKWARD_OPEN_ARROW, {
+scale: 0.6,//图标缩放大小
+strokeColor:'#fff',//设置矢量图标的线填充颜色
+strokeWeight: '2',//设置线宽
+});
+var icons = new BMap.IconSequence(sy, '10', '30');
+var json_str = 'points_json_str_tmp';       //用包含多个位置点信息的json格式字符串替换掉points_json_str_tmp
+data = JSON.parse(json_str)
+var pois = [];
+for(var i in data){       //遍历json对象的每个key/value对,p为key
+    pois.push(new BMap.Point(data[i].lng,data[i].lat))
+}
+var options = {
+            size: BMAP_POINT_SIZE_TINY,
+            shape: BMAP_POINT_SHAPE_CIRCLE,
+            color: 'red'
+        }
+var pointCollection = new BMap.PointCollection(pois, options);  // 初始化PointCollection
+map.addOverlay(pointCollection);  // 添加Overlay
+
+//添加起点
+var marker1 = new BMap.Marker(pois[0]);  // 创建标注
+map.addOverlay(marker1);              // 将标注添加到地图中
+var label = new BMap.Label("起点",{offset:new BMap.Size(0,-20)});
+marker1.setLabel(label);
+
+//添加终点
+var marker2 = new BMap.Marker(pois[pois.length - 1]);  // 创建标注
+map.addOverlay(marker2);              // 将标注添加到地图中
+var label = new BMap.Label("终点",{offset:new BMap.Size(0,-20)});
+marker2.setLabel(label);
+
+//设置缩放
+map.centerAndZoom(pois[0], 10);
+
+</script>

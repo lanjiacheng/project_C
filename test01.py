@@ -9,8 +9,8 @@ plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 # 加载数据
-# dateparse = lambda dates: pd.datetime.strptime(dates, '%Y-%m-%d %H:%M:%S')
-# df = pd.read_csv('./source_data/AA00004.csv', parse_dates=['location_time'], date_parser=dateparse)
+dateparse = lambda dates: pd.datetime.strptime(dates, '%Y-%m-%d %H:%M:%S')
+df = pd.read_csv('source_data/AA00004.csv', parse_dates=['location_time'], date_parser=dateparse)
 
 # 画出速度与acc状态之间的联系（散点图）
 # plt.scatter(df["gps_speed"],df["acc_state"])
@@ -18,27 +18,55 @@ plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 # plt.ylabel('acc状态')
 
 
-# 画出速度随时间变化的曲线（曲线图）
-# l1 = pd.date_range(pd.datetime.strptime('1998-02-17', '%Y-%m-%d'),
-#                   pd.datetime.strptime('2019-04-02', '%Y-%m-%d'), freq='M')
+# 画出acc状态和时间之间的关系（散点图）
+# plt.plot(df["location_time"],df["acc_state"])
+# plt.xlabel("时间")
+# plt.ylabel("acc状态")
+
+# 查看个字段的分布
+# x = range(df.shape[0])
+# x = df['location_time']
+# y = df['mileage']
+#
+# plt.xlim(xmin=df['location_time'][0],xmax=df['location_time'][df.shape[0]-1])
+# plt.scatter(x,y,s=0.1,edgecolors='r')
 
 
-# print(l1)
-# plt.xticks(l1, rotation=45)
-# plt.plot(df['location_time'], df['gps_speed'])
+# 根据经度纬度画出轨迹图
 
-# plt.plot(['l','j','c','sad','dsd'],[1,2,3,3,4])
-# plt.xticks(['l','j','c','dsd'],['l1','1j','1c','1dsd'])
+# df.set_index('location_time')
+# plt.scatter(df['lng'],df['lat'],s=0.1)
 
-# plt.plot([1,2,3,5],[1,2,3,5])
-# plt.xticks([1,2,5],['a','b','c'])
+index_pairs = []
 
-x = [pd.datetime.strptime('1998-02-17', '%Y-%m-%d'),pd.datetime.strptime('1998-02-18', '%Y-%m-%d'),pd.datetime.strptime('1998-02-19', '%Y-%m-%d'),pd.datetime.strptime('1998-02-21', '%Y-%m-%d')]
-plt.plot(x,[1,2,3,4])
+for i in range(df.shape[0] - 1):
+    df1 = df.iloc[i]
+    df2 = df.iloc[i + 1]
+    if df2['location_time'].timestamp() - df1['location_time'].timestamp() > 10 * 60:
+        index_pairs.append([i, i + 1])
+    print(i)
 
+print(index_pairs)
 
-# 最后显示画图结果
+split_dfs = []
+start_index = 0
+i = 0
+len_of_paris = len(index_pairs)
+for index_pair in index_pairs:
+    split_df = df.iloc[start_index:index_pair[0] + 1]
+    split_dfs.append(split_df)
+    start_index = index_pair[1]
+    if i == len_of_paris - 1:
+        split_df = df.iloc[start_index:]
+        split_dfs.append(split_df)
+    i = i + 1
+
+# 画图前应该将经纬度统一标准化
+
+for split_df in split_dfs:
+    plt.scatter(split_df['lng'],split_df['lat'],s=1)
+
 plt.show()
 
-print(pd.datetime)
-print(pd.DataFrame)
+# 最后显示画图结果
+# plt.show()

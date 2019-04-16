@@ -2,7 +2,7 @@
 vehicleplatenumber,device_num,direction_angle,lng,lat,acc_state,right_turn_signals,left_turn_signals,hand_brake,foot_brake,location_time,gps_speed,mileage
 
 
-对个字段进行处理：
+对每个字段进行处理：
 
 vehicleplatenumber（车牌号）：
     直接删除，因为源数据文件名字就是车牌号，并且该字段对接下来的分析没有意义。
