@@ -10,7 +10,7 @@ plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 # 加载数据
 dateparse = lambda dates: pd.datetime.strptime(dates, '%Y-%m-%d %H:%M:%S')
-df = pd.read_csv('source_data/AA00004.csv', parse_dates=['location_time'], date_parser=dateparse)
+df = pd.read_csv('source_datas/AA00004.csv', parse_dates=['location_time'], date_parser=dateparse)
 
 # 画出速度与acc状态之间的联系（散点图）
 # plt.scatter(df["gps_speed"],df["acc_state"])

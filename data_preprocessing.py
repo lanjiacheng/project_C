@@ -9,7 +9,7 @@ plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 # 加载数据
 dateparse = lambda dates: pd.datetime.strptime(dates, '%Y-%m-%d %H:%M:%S')
-data_df = pd.read_csv('./source_data/AA00004.csv', parse_dates=['location_time'], date_parser=dateparse)
+data_df = pd.read_csv('./source_datas/AA00004.csv', parse_dates=['location_time'], date_parser=dateparse)
 
 print(data_df.shape)
 data_df.dropna(inplace=True)

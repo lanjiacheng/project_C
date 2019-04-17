@@ -162,7 +162,7 @@ def get_distance_hav(lat0, lng0, lat1, lng1):
 
 def transform_coord(file_path):
     """
-    将文件中的坐标点的经纬度进行转换，转成百度地图标准的经纬度坐标，然后将转换后的坐标数据保存到./middle_data/coord_transformed_data/目录下的同名文件
+    将文件中的坐标点的经纬度进行转换，转成百度地图标准的经纬度坐标，然后将转换后的坐标数据保存到./middle_datas/coord_transformed_data/目录下的同名文件
     :param file_path:
     :return:
     """
@@ -187,7 +187,7 @@ def transform_coord(file_path):
     data_df['lat'] = pd.Series(lats)
 
     # 存储转换过经纬度坐标的数据
-    new_path = './middle_data/coord_transformed_data/' + file_name
+    new_path = './middle_datas/coord_transformed_data/' + file_name
     data_df.to_csv(new_path)
     print('转换' + file_path + '经纬度坐标(wgs84 to bd09)完成！\n已将转换后的数据保存到' + new_path + '中！')
     return new_path
@@ -195,7 +195,7 @@ def transform_coord(file_path):
 
 def delete_mistake_coord(file_path):
     """
-    删除文件中错误坐标点，然后将剩余坐标点保存到./middle_data/after_choose_datas/目录下同名文件
+    删除文件中错误坐标点，然后将剩余坐标点保存到./middle_datas/after_choose_datas/目录下同名文件
     :param file_path:
     :return:
     """
@@ -237,7 +237,7 @@ def delete_mistake_coord(file_path):
         print('在delete_mistake_coord(删除错误坐标)方法中处理数据进度达到：\t' + str(float(i)/len*100)[:4] + '%')
 
     df_after_choose = df.iloc[indexs_to_choose]
-    new_path = './middle_data/after_choose_datas/' + file_name
+    new_path = './middle_datas/after_choose_datas/' + file_name
     df_after_choose.to_csv(new_path)
     print('已经删除' + file_path + '文件中的错误坐标点，并将剩下的数据保存到' + new_path)
     return new_path

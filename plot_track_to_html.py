@@ -10,7 +10,7 @@ from utils.other_utils import get_points_json_from_dataFram
 
 
 # 设置源文件路径
-src_dir = './middle_data/after_choose_datas/'
+src_dir = './middle_datas/after_choose_datas/'
 src_file = 'AA00002.csv'
 src_path = src_dir + src_file
 

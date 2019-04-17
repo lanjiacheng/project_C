@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/test03.py" line="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="675aee94-1a83-4787-9a14-1911c574b17f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coord_transform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_preprocessing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/delete_mistake_coord.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middle_data/coord_transformed_data/AA00004.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plot_track_model.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plot_track_to_html.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source_data/AA00001.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source_data/AA00002.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source_data/AA00052.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source_data/AB00006.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test02.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/coord_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/other_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source_datas/AA00002.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source_datas/AB00006.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source_datas/AD00003.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coord_transform.py" beforeDir="false" afterPath="$PROJECT_DIR$/coord_transform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_preprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete_mistake_coord.py" beforeDir="false" afterPath="$PROJECT_DIR$/delete_mistake_coord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot_track_to_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_track_to_html.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/problem_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/problem_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test01.py" beforeDir="false" afterPath="$PROJECT_DIR$/test01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据预处理思路.txt" beforeDir="false" afterPath="$PROJECT_DIR$/数据预处理思路.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test02.py" beforeDir="false" afterPath="$PROJECT_DIR$/test02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/coord_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/coord_utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,24 +28,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/other_utils.py">
+        <entry file="file://$PROJECT_DIR$/problem_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state>
+              <caret column="23" selection-start-column="23" selection-end-column="23" />
               <folding>
-                <element signature="e#26#37#0" expanded="true" />
+                <element signature="e#31#97#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/problem_1.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test03.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+            <state relative-caret-position="617">
+              <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
               <folding>
-                <element signature="e#31#35#0" expanded="true" />
+                <element signature="e#26#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/coord_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="235" column="38" selection-start-line="235" selection-start-column="38" selection-end-line="235" selection-end-column="38" />
+            <state>
+              <caret selection-end-column="23" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -69,20 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding>
-                <element signature="e#26#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test02.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+            <state relative-caret-position="378">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding>
                 <element signature="e#26#57#0" expanded="true" />
               </folding>
@@ -91,10 +76,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source_data/AB00006.csv">
+        <entry file="file://$PROJECT_DIR$/test02.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="138" column="49" lean-forward="true" selection-start-line="138" selection-start-column="49" selection-end-line="138" selection-end-column="49" />
+              <folding>
+                <element signature="e#26#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source_datas/AA00002.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="146" selection-start-column="137" selection-end-column="146" />
+              <caret column="100" selection-start-column="83" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -131,9 +128,10 @@
         <option value="$PROJECT_DIR$/delete_mistake_coord.py" />
         <option value="$PROJECT_DIR$/utils/other_utils.py" />
         <option value="$PROJECT_DIR$/utils/coord_utils.py" />
-        <option value="$PROJECT_DIR$/problem_1.py" />
         <option value="$PROJECT_DIR$/test01.py" />
         <option value="$PROJECT_DIR$/test02.py" />
+        <option value="$PROJECT_DIR$/problem_1.py" />
+        <option value="$PROJECT_DIR$/test03.py" />
       </list>
     </option>
   </component>
@@ -151,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,39 +159,25 @@
             <path>
               <item name="project_C" type="b2602c69:ProjectViewProjectNode" />
               <item name="project_C" type="462c0819:PsiDirectoryNode" />
-              <item name="middle_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_C" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_C" type="462c0819:PsiDirectoryNode" />
-              <item name="middle_data" type="462c0819:PsiDirectoryNode" />
-              <item name="after_choose_datas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_C" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_C" type="462c0819:PsiDirectoryNode" />
-              <item name="plot_track_htmls" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project_C" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project_C" type="462c0819:PsiDirectoryNode" />
-              <item name="source_data" type="462c0819:PsiDirectoryNode" />
+              <item name="source_datas" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/source_data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\python_code\project_C\source_data" />
       <recent name="E:\python_code\project_C" />
+      <recent name="E:\python_code\project_C\source_datas" />
+      <recent name="E:\python_code\project_C\source_data" />
       <recent name="E:\python_code\project_C\js" />
       <recent name="E:\python_code\project_B\source_data" />
     </key>
@@ -211,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test02">
+  <component name="RunManager" selected="Python.test03">
     <configuration name="problem_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="project_B" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -275,8 +258,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="project_B" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test03" />
         <item itemvalue="Python.test02" />
         <item itemvalue="Python.problem_1" />
         <item itemvalue="Python.test01" />
@@ -461,13 +466,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middle_data/split_datas/AA00004/0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/middle_data/split_datas/AA00004/0.csv" />
     <entry file="file://$PROJECT_DIR$/middle_data/coord_transformed_data/AA00004.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1411346">
@@ -549,16 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/other_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
-          <folding>
-            <element signature="e#26#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source_data/AB00006.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -566,42 +555,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/coord_utils.py">
+    <entry file="file://$PROJECT_DIR$/source_datas/AB00006.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source_datas/AD00003.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/other_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="235" column="38" selection-start-line="235" selection-start-column="38" selection-end-line="235" selection-end-column="38" />
+        <state relative-caret-position="108">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding>
-            <element signature="e#24#35#0" expanded="true" />
+            <element signature="e#26#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problem_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
           <folding>
-            <element signature="e#31#35#0" expanded="true" />
+            <element signature="e#31#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/coord_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="23" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source_datas/AA00002.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="100" selection-start-column="83" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="138" column="49" lean-forward="true" selection-start-line="138" selection-start-column="49" selection-end-line="138" selection-end-column="49" />
+          <folding>
+            <element signature="e#26#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="378">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding>
             <element signature="e#26#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test02.py">
+    <entry file="file://$PROJECT_DIR$/test03.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+        <state relative-caret-position="617">
+          <caret line="38" column="63" lean-forward="true" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
           <folding>
-            <element signature="e#26#57#0" expanded="true" />
+            <element signature="e#26#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

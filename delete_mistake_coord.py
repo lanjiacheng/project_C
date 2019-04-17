@@ -5,7 +5,7 @@ from utils.coord_utils import *
 
 # 加载数据
 dateparse = lambda dates: pd.datetime.strptime(dates, '%Y-%m-%d %H:%M:%S')
-df = pd.read_csv('middle_data/coord_transformed_data/AA00002.csv', parse_dates=['location_time'], date_parser=dateparse)
+df = pd.read_csv('middle_datas/coord_transformed_data/AA00002.csv', parse_dates=['location_time'], date_parser=dateparse)
 df.dropna(axis=1,inplace=True)
 
 # 通过经纬度计算两个点之间的距离
@@ -33,4 +33,4 @@ for i in range(df.shape[0] - scope):
     print(i)
 
 df_after_choose = df.iloc[indexs_to_choose]
-df_after_choose.to_csv('./middle_data/after_choose_datas/AA00002.csv')
+df_after_choose.to_csv('./middle_datas/after_choose_datas/AA00002.csv')

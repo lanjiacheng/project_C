@@ -3,7 +3,7 @@
 
 """
 将源数据中的wgs84标准的经纬度坐标转换成百度地图所用bd09标准的经纬度坐标，
-然后再讲转换后的数据保存到./middle_data/coord_transformed_data/目录下，文件名不变。
+然后再讲转换后的数据保存到./middle_datas/coord_transformed_data/目录下，文件名不变。
 """
 
 
@@ -12,7 +12,7 @@ from utils.coord_utils import wgs84_to_bd09
 
 
 # 设置源文件路径
-src_dir = './source_data/'
+src_dir = './source_datas/'
 src_file = 'AA00002.csv'
 src_path = src_dir + src_file
 
@@ -33,7 +33,7 @@ data_df['lng'] = pd.Series(lngs)
 data_df['lat'] = pd.Series(lats)
 
 # 存储转换过经纬度坐标的数据
-new_path = './middle_data/coord_transformed_data/'+src_file
+new_path = './middle_datas/coord_transformed_data/'+src_file
 data_df.to_csv(new_path)
 
 print('转换' + src_path + '经纬度坐标(wgs84 to bd09)完成！\n已将转换后的数据保存到' + new_path + '中！')
